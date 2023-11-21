@@ -7,7 +7,7 @@
         {% endif %}
         <div class="controls clearfix">
             {% if use_fieldset %}
-                <div id='{{ field.auto_id }}'>
+                <fieldset id='{{ field.auto_id }}'>
                     {% for choice in field %}
                         <div class="form-check">
                             {{ choice.tag }}
@@ -27,7 +27,7 @@
                             {% endif %}
                         </div>
                     {% endfor %}
-                </div>
+                </fieldset>
             {% else %}
                 {% if is_checkbox %}
                     {{ field }}
